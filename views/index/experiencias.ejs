@@ -1,0 +1,133 @@
+<div class="container-fluid">
+
+	<h1 class="mt-5 mb-2 titulodesc">
+		Experiências
+	</h1>
+
+	<p class="dd">
+		Confira as experiências disponíveis feitas por nossa comunidade PCD! Venha admirar a beleza do nosso Mundo!
+	</p>
+
+	<div class="row">
+		<%
+			let experiencias = [
+				{
+					imagem: "/public/img/balao.jpg",
+					nome: "Voo de Balão",
+					lugar: "Boituva - SP"
+				},
+				{
+					imagem: "/public/img/asadelta.jpg",
+					nome: "Asa Delta",
+					lugar: "Atibaia - SP"
+				},
+				{
+					imagem: "/public/img/kitesurf.jpg",
+					nome: "Kitesurf",
+					lugar: "Guarapiranga - SP"
+				},
+				{
+					imagem : "/public/img/cavernadodiabo2.webp",
+					nome: "Excursão pela Caverna do Diabo",
+					lugar: "Eldorado - SP"
+
+				},
+				{
+					imagem: "/public/img/citytuor2.webp",
+					nome: "City Tuor por São Paulo",
+					lugar: "São Paulo - SP"
+				},
+				{
+					imagem: "/public/img/parapente.webp",
+					nome : "Voo de Parapente",
+					lugar: "Atibaia - SP"
+				
+				},
+				{
+					imagem: "/public/img/modalidades-de-salto-no-paraquedismo.jpg",
+					nome: "Paraquedismo",
+					lugar: "Boituva - SP"
+				},
+				{
+					imagem: "/public/img/trilhacantareira.jpg",
+					nome: "Trilha pela Serra da Cantareira",
+					lugar: "Serra da Cantareira - SP"
+				},
+				{
+					imagem: "/public/img/mergulho.jpg",
+					nome: "Mergulho no mar",
+					lugar: "Ilha Bela - SP"
+				},
+				{
+					imagem: "public/img/tirolesa.png",
+					nome: "Tirolesa de Pedra Bela",
+					lugar: "Pedra Bela - SP"
+				},
+				{
+					imagem: "public/img/veleiro.jpg",
+					nome: "Passeio de Veleiro",
+					lugar: "Ilha Bela - SP"
+				},
+			
+
+			];
+			let classes = [
+				"text-white bg-secondary",
+				"text-white bg-success",
+				"bg-warning",
+				"text-white bg-info",
+				"bg-light"
+			];
+		%>
+		<% for (let i = 0; i < experiencias.length; i++) { %>
+		<div class="col-sm-5 col-md-3 locais">
+<!--
+			<div class="card-hover shadow">
+				<div class="img-box">
+					<img src="<%= experiencias[i].imagem %>">
+				</div>
+				<div class="content-hover text-center">
+					<h2>
+						<%= experiencias[i].nome %>
+					</h2>
+					<p>
+						<%= experiencias[i].lugar %>
+					</p>
+					<a href="https://google.com" class="read-more">
+						Veja Mais
+					</a>
+				</div>
+			</div>
+		-->
+			<div class="card shadow <%= classes[i % classes.length] %>">
+				<img src="<%= experiencias[i].imagem %>" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">
+						<%= experiencias[i].nome %>
+					</h5>
+
+					<h6 class = "card-text">
+						<%= experiencias[i].lugar %>
+					</h6>
+
+				</div>
+			</div>
+
+		</div>
+
+		<% } %>
+
+	</div>
+</div>
+
+<%- contentFor("espaco-head") %>
+<style>
+
+    .dd {
+        font-size: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+        color: grey;
+    }
+
+</style>
