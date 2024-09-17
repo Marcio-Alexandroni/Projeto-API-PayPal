@@ -24,6 +24,7 @@ class IndexRoute {
 
 		res.render("index/sobre", opcoes);
 	}
+
 	public async camisa(req: app.Request, res: app.Response) {
 		let opcoes = {
 			titulo: "Camisa"
@@ -31,12 +32,21 @@ class IndexRoute {
 
 		res.render("index/camisa", opcoes);
 	}
+
 	public async blusa(req: app.Request, res: app.Response) {
 		let opcoes = {
 			titulo: "Blusa"
 		};
 
 		res.render("index/blusa", opcoes);
+	}
+
+	public async pagamento(req: app.Request, res: app.Response) {
+		let opcoes = {
+			titulo: "Pagamento"
+		};
+
+		res.render("index/pagamento", opcoes);
 	}
 
 }
