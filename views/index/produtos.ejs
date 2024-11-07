@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div style="padding:10px"></div>
 
-  <h1 class="catalogo" style="margin-left: 20px;">
+  <h1 class="titulo mt-3 mb-4">
       Catálogo
   </h1>
 
@@ -23,7 +23,7 @@
           <img src="/public/img/blusa.png" class="card-img-top" alt="Blusa Basic - DripDistrict™">
           <div class="card-body">
             <h5 class="card-title dd">Blusa Basic - DripDistrict™</h5>
-            <p class="card-text dd">Para quem não para e vive a vibe das ruas, essa peça combina o melhor do streetwear com o conforto necessário para enfrentar qualquer estação.</p>
+            <p class="card-text dd">Para quem não para e vive a vibe das ruas, essa peça combina o melhor do streetwear com o conforto necessário para qualquer parada.</p>
           </div>
         </a>
       </div>
@@ -32,28 +32,58 @@
 </div>
 
 
-<style type="text/css">
+<%- contentFor("espaco-head") %>
+<style>
 
+  body{
+    font-family: Atkinson Hyperlegible;
+    font-size: 14px;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  .titulo{
+    font-size: 65px;
+    font-family: Monoton;
+    text-align: center;
+    font-weight: regular;
+  }
+
+
+  .fundoProduto {
+    background-color: rgba(128, 128, 128, 0.08);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+		border-width: 0.5px;
+		border-style: solid;
+		border-color: gray;
+  }
+
+  
 .catalogo{
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: Lato;
-    padding: 15px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: Lato;
+  padding: 15px;
 }
 
 .dd{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .bs{
-    
-    box-shadow: 2px rgba(0, 0, 0, 0.762);
+  
+  box-shadow: 2px rgba(0, 0, 0, 0.762);
 }
 
 .card:hover {
-    text-decoration: none;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.762);
+  text-decoration: none;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.762);
 }
+
 
 </style>

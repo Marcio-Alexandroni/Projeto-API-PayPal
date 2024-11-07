@@ -5,6 +5,7 @@ img {
 html, body {
 	/* Para fazer o rodapé ficar sempre na parte inferior da página ;) */
 	min-height: 100vh;
+	font-family: Atkinson Hyperlegible;
 }
 
 .limitador {
@@ -33,100 +34,3 @@ html, body {
 	color: white;
 	text-decoration: none;
 }
-
-.locais {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.fundolocais {
-	background-color: rgb(145, 188, 145);
-	padding: 15px;
-	border-radius: 10px;
-}
-
-.fundodolocal {
-	background-color : rgb(174, 223, 101);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 125px;
-	padding-bottom: 125px;
-}
-
-.colunaexp {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.fundocolunaexp {
-	background-color: rgba(255, 255, 255, 0.8);
-	padding: 15px;
-	border-radius: 10px;
-}
-
-.fundo-secao-4 {
-	background-color: rgb(177, 216, 117);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 125px;
-	padding-bottom: 125px;
-}
-
-.fundoeventos {
-	background-color:rgb(130, 181, 54)
-	
-}
-
-.titulodesc{
-	text-align: center;
-	font-weight: bold;
-	font-size: 50px;
-}
-
-/*
-.card-hover {
-    width: 100%;
-	overflow: visible;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
-    transition: 0.5s;
-}
-
-.card-hover .img-box {
-    width: 100%;
-    margin: 0px;
-    transition: 0.5s;
-}
-
-.card-hover:hover .img-box {
-    margin-top: -100px;
-    scale: 0.75;
-}
-
-.card-hover .img-box img {
-    border-radius: 20px;
-	width: 100%;
-}
-
-.card-hover .content-hover {
-    overflow: hidden;
-	height: 50px;
-    padding: 0px 30px;
-    transition: 0.5s;
-}
-
-.card-hover:hover .content-hover {
-    height: 250px;
-}
-
-.card-hover .read-more {
-   background: linear-gradient(90deg, #3730a3, #7e22ce);
-   padding: 12px;
-   color: #fff;
-   text-decoration: none;
-   border-radius: 8px;
-}
-*/
